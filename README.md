@@ -1,113 +1,81 @@
-# BarberManager
+# BarberManager (Barber OS)
 
-Sistema de gestión integral para barberías que permite administrar citas, ventas de productos, barberos y generar reportes.
+##  Project Overview
+**Context:** Software Engineering Capstone Project
+**Role:** Documentation and Presentation of the Project, Backend Architect, Database Contribution,
 
-## Descripción
+A comprehensive full-stack management system designed to streamline barbershop operations, enabling appointment scheduling, inventory tracking, and staff management.
 
-BarberManager es una aplicación web desarrollada con Flask que proporciona una solución completa para la gestión de barberías. El sistema permite a los clientes reservar citas, a los administradores gestionar el personal, inventario de productos y ventas, además de generar reportes de operación.
+> ** Academic Disclaimer:** This repository contains the source code developed by our student team. My primary contributions focused on **Database Architecture (MariaDB/SQL)**, **Backend Logic (Flask)**, and **Technical Documentation/Demos**.
 
-## Características Principales
+---
 
-- 🗓️ Gestión de citas y reservaciones
-- 💈 Administración de barberos
-- 🏪 Inventario y venta de productos
-- 💰 Sistema de pagos (efectivo/tarjeta)
-- 📊 Generación de reportes
-- 👤 Gestión de usuarios y roles
-- 🛍️ Tienda en línea de productos
+##  Project Demos & GenAI Integration
+I utilized **Generative AI tools** to produce documentation and video assets, accelerating the presentation workflow.
 
-## Estructura del Proyecto
+###  System Walkthrough
+*(Videos located in the `/demos` folder)*
 
-```
-BarberManager/
-├── main.py                 # Archivo principal de la aplicación Flask
-├── backup-barberManager.sql # Respaldo de la base de datos
-├── models/                 # Modelos de datos
-│   ├── producto_model.py
-│   └── ...
-├── helpers/               # Funciones auxiliares y conexión a BD
-│   ├── conection.py
-│   ├── producto.py
-│   └── ...
-├── templates/             # Plantillas HTML
-│   ├── index.html
-│   ├── AdminManager.html
-│   ├── productos.html
-│   └── ...
-├── static/               # Archivos estáticos
-│   ├── images/
-│   ├── js/
-│   └── styles/
-└── sql/                  # Scripts SQL y migraciones
-```
+| Appointment Booking | Inventory Management |
+| :---: | :---: |
+| <video src="demos/Interface_andReview.mp4" width="250" controls></video> | <video src="demos/DataBase.mp4DataBase.mp4" width="250" controls></video> | 
 
-## Requisitos Técnicos
+*> Note: If videos do not play directly, please view them in the [demos/](./demos/) folder.*
 
-### Dependencias Principales
-- Python 3.8+
-- Flask
-- MySQL
-- mysql-connector-python
-- Bootstrap 5.3.0
-- Font Awesome 6.4.0
+---
 
-### Base de Datos
-- MySQL 8.0+
-- Esquema definido en `backup-barberManager.sql`
+## 🛠 Technical Stack
+* **Language:** Python 3.8+
+* **Backend Framework:** Flask
+* **Database:** MySQL / MariaDB (Schema in `/sql`)
+* **Frontend:** HTML5, Bootstrap 5.3, FontAwesome 6.4
+* **Database Management:** DBeaver
 
-## Instalación
+---
 
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/tu-usuario/BarberManager.git
-cd BarberManager
-```
+## 🗄 Database Architecture (My Contribution)
+I led the design of the relational schema to ensure data integrity for critical business operations. Key relationships include:
+* **Appointments:** `Users` ↔ `Barbers` ↔ `Services`
+* **E-commerce:** `Products` ↔ `Orders` ↔ `Inventory`
 
-2. Crear un entorno virtual e instalar dependencias:
-```bash
-python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
+### 📄 Documentation
+* [**📂 View System Architecture & Diagrams**](./docs/)
+* [**📖 User Manual**](./docs/)
 
-3. Configurar la base de datos:
-```bash
-mysql -u root -p < backup-barberManager.sql
-```
+---
 
-4. Iniciar la aplicación:
-```bash
-python main.py
-```
+##  Key Features
+* **🗓️ Appointment Scheduling:** Real-time slot reservation system.
+* **💈 Staff Management:** Admin tools to manage barbers and schedules.
+* **🏪 Inventory Control:** Product tracking and online store functionality.
+* **📊 Reporting:** Sales and operation reports generation.
+* **🔒 Security:** Role-based authentication and data sanitization.
 
-## Uso
+---
 
-### Panel de Administración
-- Acceder a `/adminManager` para gestionar citas
-- Acceder a `/productos` para gestionar inventario
-- Acceder a `/reportes` para ver reportes de ventas
+## ⚙️ Installation (Local Dev)
 
-### Portal del Cliente
-- Página principal en `/` para ver servicios y productos
-- Reservar citas desde la sección "Reservar"
-- Comprar productos desde la tienda en línea
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/DanielGaitan1/barber-shop-management.git](https://github.com/DanielGaitan1/barber-shop-management.git)
+    ```
 
-## Características de Seguridad
-- Autenticación de usuarios
-- Roles y permisos
-- Protección de rutas administrativas
-- Validación de formularios
-- Sanitización de datos
+2.  **Set up Virtual Environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
 
-## Contribución
-1. Fork el proyecto
-2. Cree una rama para su característica (`git checkout -b feature/AmazingFeature`)
-3. Commit sus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abra un Pull Request
+3.  **Database Setup:**
+    ```bash
+    mysql -u root -p < backup-barberManager.sql
+    ```
 
-## Licencia
-Este proyecto está bajo la Licencia MIT - vea el archivo `LICENSE` para más detalles.
+4.  **Run Application:**
+    ```bash
+    python main.py
+    ```
 
-## Contacto
-Link del Proyecto: [https://github.com/tu-usuario/BarberManager](https://github.com/tu-usuario/BarberManager) 
+---
+*Developed by Daniel Gaitan & Team | Software Engineering II*
