@@ -18,7 +18,16 @@ I utilized **Generative AI tools** to produce documentation and video assets, ac
 
 | Appointment Booking | Inventory Management |
 | :---: | :---: |
-| <video src="demos/Interface_andReview.mp4" width="250" controls></video> | <video src="demos/DataBase.mp4DataBase.mp4" width="250" controls></video> | 
+
+
+https://github.com/user-attachments/assets/ede56432-3794-405a-a2da-385b20a46a99
+
+
+
+https://github.com/user-attachments/assets/9fc12633-2833-4511-aaad-5f93b2707b56
+
+
+
 
 *> Note: If videos do not play directly, please view them in the [demos/](./demos/) folder.*
 
